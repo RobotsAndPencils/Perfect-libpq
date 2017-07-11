@@ -6,5 +6,7 @@
 #include "/Applications/Postgres.app/Contents/Versions/latest/include/libpq-fe.h"
 #elif __has_include("/usr/local/pgsql/include/libpq-fe.h")
 #include "/usr/local/pgsql/include/libpq-fe.h"
+#elif __has_include("/usr/include/postgresql/libpq-fe.h")
+#include "/usr/include/postgresql/libpq-fe.h"
 #endif
 
